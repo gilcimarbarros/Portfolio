@@ -166,7 +166,7 @@ header{
 }
 
 .banner button:hover{
-    opacity: 0.8;
+    opacity: 0,8;
 }
 
 @keyframes moveBanner{
@@ -323,4 +323,57 @@ header{
     .conhecimentos-img-wrapper img{
         object-fit: cover;
         width: 110%;
+    }
+
+    .projetos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 18rem;
+        height: 25rem;
+        position: relative;
+    }
+
+    .card-img-wrapper{
+        width: 100%;
+        height: 100%;
+        background-color: #acaaaa;
+        border-radius: 0.5rem;
+    }
+
+    .card-img-wrapper img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        opacity: .7;
+    }
+
+    .card-info{
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,0.4);
+    }
+
+    .card-info h2{
+        font-family: var(--font-primary);
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(163, 34, 73);
+    }
+    
+    .card-info h3{
+        font-family: var(--font-action);
+        font-weight: bolder;
+        color: rgba(192, 51, 94, 0.555);
+    }
+    
+    .card-info p{
+        font-family: var(--font-secundary);
+        color: rgb(163, 34, 73);
+        font-weight: 400;
+        width: 80%;
     }
